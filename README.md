@@ -1,16 +1,17 @@
-# leena
+# Leena Game
 
-A new Flutter project.
+In this project, I learned how to use bounding detection with CollisionCallbacks and
+using sprites from a tilesheet. Leena uses a SpriteAnimationComponent to cycle through
+her skating tricks and collects gems along the way.
 
-## Getting Started
+![Leena Start](readme_assets/start.PNG)
 
-This project is a starting point for a Flutter application.
+When we start the game, Leena has full power (30 seconds) which continously decrements as the game updates.
 
-A few resources to get you started if this is your first Flutter project:
+![Leena Mushroom](readme_assets/mushroom.PNG)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Leena encounters obstacles, such as cute mushrooms, which are a part of the tile map.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Leena Game Over](readme_assets/gameover.PNG)
+
+The game ends when the power remaining reaches 0. Leena's movement stops!

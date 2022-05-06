@@ -5,8 +5,10 @@ import 'package:leena/world/ground.dart';
 
 class Leena extends SpriteAnimationComponent
     with CollisionCallbacks, HasGameRef<LeenaGame> {
-  Leena() : super() {
+  Leena({required position}) : super(position: position) {
     debugMode = true;
+    size = Vector2(83, 100);
+
     anchor = Anchor.bottomCenter;
   }
 
@@ -18,7 +20,8 @@ class Leena extends SpriteAnimationComponent
   @override
   Future<void> onLoad() async {
     await super.onLoad();
-    add(RectangleHitbox());
+    add(RectangleHitbox(
+        size: Vector2(width * 0.6, height), position: Vector2(20, 0)));
   }
 
   @override
