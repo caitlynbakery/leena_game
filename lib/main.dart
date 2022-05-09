@@ -11,6 +11,7 @@ import 'package:tiled/tiled.dart';
 import 'world/ground.dart';
 import 'actors/gem.dart';
 import 'dashboard/dashboard.dart';
+import 'world/intro.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -48,6 +49,7 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
   late SpriteAnimation jumpAnim;
   late double mapWidth;
   late AudioPool pool;
+  late Intro intro;
 
   int magicLevel = 0;
 
@@ -55,10 +57,12 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
   int remainingTime = 30;
   bool timerStarted = false;
 
+  bool introFinished = false;
+  late Sprite dadSprite;
+
   @override
   Future<void>? onLoad() async {
     await super.onLoad();
-
     countDown = Timer(1, onTick: () {
       if (remainingTime > 0) {
         remainingTime--;
@@ -112,6 +116,9 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
         worldBounds: Rect.fromLTRB(0, 0, mapWidth, mapHeight));
 
     overlays.add('DashboardOverlay');
+    dadSprite = await loadSprite('dad.png');
+    intro = Intro(size: size);
+    add(intro);
   }
 
   @override
@@ -131,7 +138,12 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
   @override
   void onTapDown(TapDownInfo info) {
     super.onTapDown(info);
-    if (leena.onGround) {
+    if (!introFinished) {
+      introFinished = true;
+      remove(intro);
+      overlays.notifyListeners();
+    }
+    if (leena.onGround && introFinished) {
       // move left
       if (info.eventPosition.viewport.x < 200) {
         timerStarted = true;
