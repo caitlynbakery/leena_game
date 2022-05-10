@@ -32,18 +32,26 @@ class Dashboard extends StatelessWidget {
               ),
               game.remainingTime > 0
                   ? Container()
-                  : Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'GAME OVER',
+                  : game.magicLevel == game.numGems
+                      ? const Text(
+                          'YOU WON!',
                           style: TextStyle(
-                              color: Colors.red,
+                              color: Colors.green,
                               fontSize: 60,
                               fontFamily: 'Arcade'),
                         )
-                      ],
-                    )
+                      : Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Text(
+                              'GAME OVER',
+                              style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 60,
+                                  fontFamily: 'Arcade'),
+                            )
+                          ],
+                        )
             ],
           )
         : Container();

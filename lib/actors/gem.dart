@@ -11,7 +11,7 @@ class Gem extends SpriteComponent
   final TiledObject tiledObject;
 
   Gem({required this.tiledObject}) : super() {
-    debugMode = true;
+    debugMode = false;
   }
 
   @override
@@ -26,6 +26,7 @@ class Gem extends SpriteComponent
     print('hit gem');
     if (other is Leena) {
       //    FlameAudio.play('success.mp3');
+
       gameRef.pool.start();
       removeFromParent();
       gameRef.magicLevel++;

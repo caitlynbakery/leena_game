@@ -44,3 +44,6 @@ Leena encounters obstacles, such as cute mushrooms, which are a part of the tile
 ![Leena Game Over](readme_assets/gameover.PNG)
 
 The game ends when the power remaining reaches 0. Leena's movement stops!
+
+![Leena Intro](readme_assets/intro.PNG)
+![Leena Intro](readme_assets/win.PNG)

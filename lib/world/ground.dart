@@ -4,14 +4,15 @@ import 'package:flame/components.dart';
 import 'package:flame/components.dart';
 
 class Ground extends PositionComponent {
-Ground ({required size, required position}) :super(size:size, position: position) {
-  debugMode = true;
-}
+  Ground({required size, required position})
+      : super(size: size, position: position) {
+    debugMode = false;
+  }
 
-@override
-Future<void> onLoad() async{
-await super.onLoad();
+  @override
+  Future<void> onLoad() async {
+    await super.onLoad();
 
-add(RectangleHitbox());
-}
+    add(RectangleHitbox());
+  }
 }

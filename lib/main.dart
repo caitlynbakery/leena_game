@@ -59,6 +59,7 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
 
   bool introFinished = false;
   late Sprite dadSprite;
+  int numGems = 0;
 
   @override
   Future<void>? onLoad() async {
@@ -86,9 +87,10 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
     }
 
     var gemGroup = homeMap.tileMap.getLayer<ObjectGroup>('gems');
-
-    for (final gem in gemGroup!.objects) {
+    numGems = gemGroup!.objects.length;
+    for (final gem in gemGroup.objects) {
       var gemSprite = await loadSprite('gems/${gem.type}.png');
+
       add(Gem(tiledObject: gem)
         ..sprite = gemSprite
         ..position = Vector2(gem.x, gem.y - gem.height)
