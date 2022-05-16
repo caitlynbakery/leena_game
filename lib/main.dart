@@ -19,6 +19,7 @@ void main() {
   Flame.device.setLandscape();
   runApp(
     MaterialApp(
+      title: "Leena Game",
       home: Scaffold(
         body: GameWidget(
           game: LeenaGame(),
