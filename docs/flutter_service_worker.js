@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "c6811c60515f3f4faf46d0e439d1ccbe",
+  "assets/AssetManifest.json": "6d03a898083e49e229acfa8ae2fe2511",
 "assets/assets/audio/sfx/food.mp3": "938be6ed42c09de39698add6a9181f92",
 "assets/assets/audio/sfx/success.mp3": "4eb0e5d0ec6119778e1f4f1f03c87c35",
 "assets/assets/audio/sfx/yay.mp3": "bec23fa4dfaecebf494318d399621f89",
@@ -15,6 +15,7 @@ const RESOURCES = {
 "assets/assets/fonts/ARCADECLASSIC.TTF": "964111990ca3937960147b80e8d07e61",
 "assets/assets/idle.json": "e081527b411afce5f66aeea42146cf64",
 "assets/assets/images/background.png": "25d5be3073245a2c56c82ffec7d50822",
+"assets/assets/images/dad.png": "aeb522a7b6d2a6bde733233ae78bea9d",
 "assets/assets/images/flip.png": "90f536dd29bfe9a9a8089c61b9892726",
 "assets/assets/images/gems/Coal.png": "2783c759044b650e52e310681b311972",
 "assets/assets/images/gems/CopperIngot.png": "3c0e12cbdee888db4f902d01ffb340bd",
@@ -77,9 +78,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "416eefb756744bcf4a03a189a79fb85e",
-"/": "416eefb756744bcf4a03a189a79fb85e",
-"main.dart.js": "a7a570be50153ea4b4ee1d9e2e1656df",
+"index.html": "494049981a3194fcc41bf4dc47004084",
+"/": "494049981a3194fcc41bf4dc47004084",
+"main.dart.js": "5e46183e5613360865ae7491cf9ecf30",
 "manifest.json": "ab76b82735223751694e151e7371561b",
 "version.json": "6ec0543335a17792af8d68aa679273ac"
 };
