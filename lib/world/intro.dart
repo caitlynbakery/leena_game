@@ -8,6 +8,7 @@ class Intro extends PositionComponent with HasGameRef<LeenaGame> {
   Intro({required size}) : super(size: size);
 
   late SpriteComponent dad;
+  late SpriteComponent button;
   String introString =
       'Leena, this is your father. My ship has crashed and the crystals  that power my '
       'engines are gone. I will be trapped here unless '
@@ -23,6 +24,11 @@ class Intro extends PositionComponent with HasGameRef<LeenaGame> {
       ..size = Vector2(size.y, size.y)
       ..position = Vector2(size.x / 2, 50);
     add(dad);
+    button = SpriteComponent()
+      ..sprite = gameRef.buttonSprite
+      ..size = Vector2(300, 168)
+      ..position = Vector2(300, 400);
+    add(button);
     add(IntroBox(introString, size.x / 2)..position = Vector2(100, 50));
     return super.onLoad();
   }

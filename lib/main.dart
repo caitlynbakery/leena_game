@@ -60,6 +60,7 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
 
   bool introFinished = false;
   late Sprite dadSprite;
+  late Sprite buttonSprite;
   int numGems = 0;
 
   @override
@@ -120,6 +121,7 @@ class LeenaGame extends FlameGame with HasCollisionDetection, TapDetector {
 
     overlays.add('DashboardOverlay');
     dadSprite = await loadSprite('dad.png');
+    buttonSprite = await loadSprite('start.png');
     intro = Intro(size: size);
     add(intro);
   }

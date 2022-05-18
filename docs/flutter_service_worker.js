@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6d03a898083e49e229acfa8ae2fe2511",
+  "assets/AssetManifest.json": "f5f23de34131890ecc12ec5be06b0448",
 "assets/assets/audio/sfx/food.mp3": "938be6ed42c09de39698add6a9181f92",
 "assets/assets/audio/sfx/success.mp3": "4eb0e5d0ec6119778e1f4f1f03c87c35",
 "assets/assets/audio/sfx/yay.mp3": "bec23fa4dfaecebf494318d399621f89",
@@ -59,6 +59,7 @@ const RESOURCES = {
 "assets/assets/images/leena.png": "4570ba1b3ab4e25922231fc187254b5e",
 "assets/assets/images/obstacles.png": "fe701a33bd59e7e7acd15ef907e9a74a",
 "assets/assets/images/push.png": "271bbc1150ab9d2697899b6c18b383a1",
+"assets/assets/images/start.png": "4338149c7a109aaf8d5429e0cafcf3ba",
 "assets/assets/leena.json": "988ba3843ae26eb5c15452afd7c4867f",
 "assets/assets/push.json": "afe98381963b263d06a480a31f2fb021",
 "assets/assets/push.tps": "70a208be8a87aeda31a4055ae889b98c",
@@ -78,10 +79,10 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "4caf432eaf38d320a40cafc8e948ca79",
-"/": "4caf432eaf38d320a40cafc8e948ca79",
+"index.html": "4bc5e197ae49db4403c3ef9154ec4b82",
+"/": "4bc5e197ae49db4403c3ef9154ec4b82",
 "leena.png": "6811acb11dda826129d57dea97ece0dd",
-"main.dart.js": "04b7cb45ae5e5c56a04de996cc27a7af",
+"main.dart.js": "633d50ead2905fbf38998c8edc0642b2",
 "manifest.json": "ab76b82735223751694e151e7371561b",
 "version.json": "6ec0543335a17792af8d68aa679273ac"
 };
